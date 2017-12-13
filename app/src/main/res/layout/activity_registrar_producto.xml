@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registrar_producto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="mx.com.develop.intimex.RegistrarProducto">
+
+    <ImageView
+        android:id="@+id/iv_foto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="Descripción"/>
+
+    <Button
+        android:id="@+id/btn_tomar_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button"
+        android:layout_gravity="center"
+        android:text="Tomar Foto"/>
+
+    <EditText
+        android:id="@+id/et_nombre_producto"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:hint="Nombre Producto"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_marca_producto"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:hint="Marca del Producto"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_precio_compra"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:hint="Precio de compra"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_precio_venta"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:hint="Precio de venta"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_cantidad_stock"
+        android:inputType="numberSigned"
+        android:layout_width="match_parent"
+        android:hint="Cantidad de productos el almacén"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_registrar_producto"
+        android:layout_width="match_parent"
+        android:text="Registar Producto"
+        style="@style/Button"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
